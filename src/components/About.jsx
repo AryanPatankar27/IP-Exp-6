@@ -1,21 +1,40 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <div className="max-w-3xl mx-auto">
-      <h2 className="text-3xl font-bold mb-6">About Me</h2>
-      <div className="bg-white shadow-md rounded-lg p-6">
-        <p className="text-gray-700 mb-4">
-          Hi, I'm Aryan Patankar, a passionate Full Stack Developer with over 5 years of experience in creating web applications. I specialize in React, Node.js, and cloud technologies.
-        </p>
-        <p className="text-gray-700 mb-4">
-          My journey in tech started when I built my first website at the age of 15. Since then, I've been constantly learning and improving my skills to stay up-to-date with the latest technologies.
-        </p>
-        <p className="text-gray-700">
-          When I'm not coding, you can find me hiking in the mountains, reading sci-fi novels, or experimenting with new recipes in the kitchen.
-        </p>
-      </div>
-    </div>
+    <motion.div 
+      className="max-w-3xl mx-auto py-16"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <h2 className="text-4xl font-bold mb-8 text-center">About Me</h2>
+      <motion.div 
+        className="bg-white shadow-lg rounded-lg p-8"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.2, duration: 0.3 }}
+      >
+       
+        <motion.p 
+          className="text-lg text-gray-700 mb-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7, duration: 0.5 }}
+        >
+          Hello! I'm Aryan Patankar, a passionate Full Stack Developer with a keen interest in building scalable web applications and exploring new technologies.
+        </motion.p>
+        <motion.p 
+          className="text-lg text-gray-700"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.9, duration: 0.5 }}
+        >
+          With expertise in React, Node.js, and cloud technologies, I strive to create efficient and user-friendly solutions to complex problems.
+        </motion.p>
+      </motion.div>
+    </motion.div>
   );
 };
 

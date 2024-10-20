@@ -7,15 +7,15 @@ const Projects = () => {
       title: 'E-commerce Platform',
       description: 'A full-stack e-commerce solution built with React, Node.js, and MongoDB.',
       image: 'https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-      github: 'https://github.com',
+      github: 'https://github.com/AryanPatankar27/UniMart',
       live: 'https://example.com',
     },
     {
-      title: 'Task Management App',
-      description: 'A Trello-like task management application using React and Firebase.',
+      title: 'ZenGuide',
+      description: 'Your Trustworthy AI Support for student well-being.',
       image: 'https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-      github: 'https://github.com',
-      live: 'https://example.com',
+      github: 'https://github.com/AryanPatankar27/ZenGuide',
+      live: 'https://66fd5c10f77d7b0c45163fa3--jocular-gumdrop-752e3b.netlify.app/',
     },
   ];
 
